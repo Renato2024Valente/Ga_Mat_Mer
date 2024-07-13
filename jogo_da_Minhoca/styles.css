@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.red-start {
+    background-color: #ffcccc;
+}
+
+.yellow-start {
+    background-color: #ffffcc;
+}
+
+.green-start {
+    background-color: #ccffcc;
+}
+
+.blue-start {
+    background-color: #cce5ff;
+}
+
+#pieces {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.piece {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#dice-result, #player-position {
+    margin-top: 20px;
+}
